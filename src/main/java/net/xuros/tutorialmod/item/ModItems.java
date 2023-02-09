@@ -12,10 +12,12 @@ public class ModItems {
 
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite", new Item(new Item.Settings()), ModItemGroup.TANZANITE);
     public static final Item TANZANITE = registerItem("tanzanite", new Item(new Item.Settings()), ModItemGroup.TANZANITE);
+
     private static Item registerItem(String name, Item item, ItemGroup group) {
         ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
         return Registry.register(Registries.ITEM, new Identifier(TutorialMod.MOD_ID, name), item);
     }
+
     public static void registerModItems() {
         TutorialMod.LOGGER.debug("Registering Mod Items for " + TutorialMod.MOD_ID);
     }

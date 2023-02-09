@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "tutorialmod",
   "version": "${version}",
-
   "name": "Tutorial Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
@@ -12,10 +11,8 @@
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-
   "license": "MIT License",
   "icon": "assets/tutorialmod/icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -28,7 +25,6 @@
   "mixins": [
     "tutorialmod.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.14.14",
     "fabric-api": "*",
